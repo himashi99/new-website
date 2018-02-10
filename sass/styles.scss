@@ -140,14 +140,47 @@ html, body {
   border: none;
   margin: 0;
   padding: 0;
-  color: blue;
   outline: none;
   font-size: 11px;
   color: $primary-color;
   text-transform: uppercase;
   text-decoration: underline;
+  cursor: pointer;
 }
 
-button:active {
-  color: #822034
+
+//Media Queries
+
+@media screen and (max-device-width: 480px) {
+  .sectOne {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/phonee.jpg");
+  }
 }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .sectOne {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/ipad.jpg");
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+  .sectOne {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/phonee.jpg");
+  }
+}
+
+
+
+

@@ -141,15 +141,41 @@ html, body {
   border: none;
   margin: 0;
   padding: 0;
-  color: blue;
   outline: none;
   font-size: 11px;
   color: #fff;
   text-transform: uppercase;
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/* line 151, ../sass/styles.scss */
-button:active {
-  color: #822034;
+@media screen and (max-device-width: 480px) {
+  /* line 155, ../sass/styles.scss */
+  .sectOne {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/phonee.jpg");
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 165, ../sass/styles.scss */
+  .sectOne {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/ipad.jpg");
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  /* line 175, ../sass/styles.scss */
+  .sectOne {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/phonee.jpg");
+  }
 }
