@@ -1,53 +1,46 @@
 @import "compass";
 @import "partials/variables";
-//@import "partials/normalize";
+@import "partials/normalize";
 @import "partials/base";
 @import "partials/layout";
 @import "partials/mixins";
 
-* {
-  padding: 0px;
-  margin: 0px;
+body {
+  font-size: 12px;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-} 
-
-.top {
-  height: 10%;
+header {
+  height: 10vh;
+  display: flex;
 
   p {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     font-family: Source Sans Pro, sans-serif;
-    letter-spacing: 12px;
-    font-size: 25px;
-    padding-left: 30px;
+    letter-spacing: 0.5em;
+    font-size: 1.9em;
+    padding-left: 1em;
   }
 }
 
 .section {
-  height: 100%; 
-  width: 100%;
+  height: 110vh; 
+  // width: 100%;
   background-size: cover;
   background-attachment: fixed;
 
   h1 {
+    margin: 0;
     color: $primary-color;
     font-family: Bariol, sans-serif;
-    font-size: 80px;
+    font-size: 6.6em;
     text-transform: uppercase;
-    line-height: 13em;
+    padding-top: 5.5em;
     text-align: center;
   }
 }
 
 .sub-section {
-  height: 50%;
   background-color: $primary-color;
+  padding: 8em;
 }
 
 .sect1 {
@@ -56,50 +49,39 @@ html, body {
 
 .sub-section {
 
-  .contain {
-    padding-top: 60px;
-    padding-bottom: 70px;
-    padding-right: 190px;
-    padding-left: 190px;
-    width: 100%;
-    height: 100%
+  h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Palatino;
   }
 
-    h3 {
-      //position: relative;
-      //top: 20%;
-      //transform: translateY(-20%);
-      text-align: center;
-      font-size: 30px;
-      font-family: Palatino;
-      //line-height: 150px;
-    }
+  p {
+    font-size: 18px;
+    font-family: Palatino;
+    padding-top: 25px;
 
-    p {
-      //position: relative;
-      //top: 30%;
-      //transform: translateY(-30%);
-      font-size: 18px;
-      font-family: Palatino;
-      padding-top: 25px;
-
-      a {
-        font-weight: bolder;
-        font-style: oblique;
-        font-size: 20px;
-      }
+    a {
+      font-weight: bolder;
+      font-style: oblique;
+      font-size: 20px;
     }
+  }
 
-    .links {
-      text-align: center;
-      padding-top: 60px;
-      height: 100px;
-    }
+  .links {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 60px;
+    height: 100px;  
 
-    .logos {
-      width: 60px;
-      padding-right: 25px;
+    li {
+      display: inline;
     }
+  }
+
+  .logos {
+    width: 5em;
+    padding-right: 1.5em;
+  }
 }
 
 .sect2 {
@@ -108,52 +90,60 @@ html, body {
   h2 {
     color: $primary-color;
     font-family: Bariol, sans-serif;
-    font-wiehgt: bold;
+    font-weight: bold;
     font-size: 66px;
     text-transform: uppercase;
     text-align: center;
-    line-height: 270px;
+    margin: 0px;
+    padding-top: 5.5em;
   }
-    p {
-      padding-top: 45px;
-      text-align: center;
-    }
 
-      a {
-        color: $primary-color;
-        font-size: 25px;
-        text-align: center;
-      }
+  p {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
 
-      a:hover, a:active { 
-       color: #822034;
-      }
+  a {
+    color: $primary-color;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  a:hover, a:active { 
+   color: #822034;
+ }
 }
 
 .back-to-top {
   display: flex;
-  position: relative;
-  top: 50%;
   justify-content: center;
+  position: relative;
+  top: 40%;
 }
 
-#scrollup {
+.scroll-to-top {
+  // -webkit-transition-duration: 0.4s; /* Safari */
+  // transition-duration: 0.4s;
   background: none;
   border: none;
   margin: 0;
   padding: 0;
   outline: none;
-  font-size: 11px;
+  font-size: 1.2em;
   color: $primary-color;
   text-transform: uppercase;
   text-decoration: underline;
-  cursor: pointer;
+ }
+
+ .scroll-to-top:hover {
+  color: #822034;
 }
-
-
 //Media Queries//
 
-//Phone/
+//Phone - Portrait/
 
 @media (min-width : 320px) and (max-width : 480px) {
   .top p {
@@ -162,15 +152,12 @@ html, body {
     padding-left: 20px;
     padding-right: 90px;
   }
-}
 
-@media (min-width : 320px) and (max-width : 480px) {
   .section {
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-attachment: scroll;
-  // background-image: url("../images/simpsons.jpg");
   }
 
   .sect1 {
@@ -181,9 +168,7 @@ html, body {
       line-height: 20em;
     }
   }
-}
 
-@media (min-width : 320px) and (max-width : 480px) {
   .sub-section {
     height: 95%;
 
@@ -192,22 +177,18 @@ html, body {
       padding-bottom: 20px;
       padding-right: 35px;
       padding-left: 35px;
-    
+
       h3 {
         font-size: 20px;
       }
     }
   }
-}
 
-@media (min-width : 320px) and (max-width : 480px) {
   .links {
     padding-top: 80px;
     height: 100px;
   } 
-}
 
-@media (min-width : 320px) and (max-width : 480px) {
   .sect2 {
     background-image: url("../images/image-workdesk-phone.jpg");
     overflow: hidden;
@@ -218,22 +199,125 @@ html, body {
       line-height: 100px;  
     }
   }
-}
 
-@media (min-width : 320px) and (max-width : 480px) {
   .sect2 a {
     font-size: 20px;
   }
+
+  .back-to-top {
+    top: 40%;
+  }
+
+  #scrollup {
+    font-size: 14px;
+  }
 }
 
-@media (min-width : 320px) and (max-width : 480px) {
+//Phone - Landscape/
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+  .section {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .sect1 {
+    background-image: url("../images/image-himashi-phone-landscape.jpg");
+
+    h1 {
+      font-size: 40px;
+      line-height: 15em;
+    }
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+  .sub-section {
+    height: 95%;
+
+    .contain {
+      padding-top: 25px;
+      padding-bottom: 20px;
+      padding-right: 35px;
+      padding-left: 35px;
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+  .contain p {
+    font-size: 10px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+  .links {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+  .sect2 {
+    overflow: hidden;
+
+    h2 {
+      padding-top: 30px;
+      font-size: 50px;
+      line-height: 100px;  
+    }
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
   .back-to-top {
     top: 40%;
   }
 }
 
-@media (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
   #scrollup {
     font-size: 14px;
+  }
+}
+
+
+//Ipad/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  .section {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .sect1 {
+    background-image: url("../images/image-himashi-ipad.jpg");
+
+    h1 {
+      line-height: 19em;
+    }
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  .sect2 {
+    background-image: url("../images/image-workdesk-ipad.jpg");
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  #scrollup {
+    font-size: 19px;
   }
 }
