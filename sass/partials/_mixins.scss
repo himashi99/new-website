@@ -1,3 +1,47 @@
 @mixin default-text-color($tc) {
   color: $tc;
 }
+
+@mixin center-div {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin repeating-section-with-image {
+  height: 100vh; 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+@mixin section-title {
+  font: bold 5.5em Bariol, sans-serif;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 4em;
+  text-align: center;
+}
+
+@mixin sub-section-with-text {
+  background-color: $primary-color;
+  padding: 8em;
+}
+
+@mixin sub-section-title {
+  font: bold 2.5em Palatino, serif;
+  text-align: center;
+}
+
+@mixin sub-section-para {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+
+@mixin button-no-property {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}

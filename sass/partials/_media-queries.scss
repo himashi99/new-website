@@ -1,0 +1,222 @@
+//General Queries
+
+@media only screen and (max-width: 520px) and (orientation: portrait) {
+
+        header {
+            p {
+                font-size: 1.6em !important;
+                letter-spacing: 0.4em !important;
+            }
+        }
+    
+        .section-with-image {
+          
+            h1 {
+                font-size: 5em !important;
+                padding-top: 7em !important;
+            }
+        }  
+    
+        .sect1 {
+            background-image: url("../images/image-himashi-phone.jpg");
+          }
+    
+        .sub-section {
+            padding: 6em !important;
+    
+            h3 {
+                font-size: 1.4em !important;
+            }
+        }
+    
+        .sect2 {
+            background-image: url("../images/image-workdesk-phone.jpg") !important;
+    
+            h1 {
+                font-size: 3.6em !important;
+                padding-top: 6em !important; 
+            }
+        }
+    }
+     
+    @media (max-width: 860px) and (min-width: 726px) {
+        .sub-section {
+          
+            h3 {
+              font-size: 2em !important;
+            }
+        }
+    }
+    
+    @media (max-width: 725px) and (min-width: 521px) {
+        .sub-section {
+          
+            h3 {
+              font-size: 1.6em !important;
+            }
+        }
+    
+        .sect2 {
+            background-image: url("../images/image-workdesk-ipad.jpg") !important;
+    
+            h1 {
+                font-size: 4em !important;
+                padding-top: 6em !important;
+            }
+        }
+    }
+
+
+
+//iOS only removed fixed background property
+
+@supports (-webkit-overflow-scrolling: touch) {
+    //     /* CSS specific to iOS devices */ 
+    .section-with-image {
+        background-attachment: scroll !important;
+    }
+}
+
+//iPhone - Portrait
+
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    header {
+        p {
+            font-size: 1.3em !important;
+            letter-spacing: 0.3em !important;
+        }
+    }
+    
+    .section-with-image {
+        h1 {
+            font-size: 4em !important;
+            padding-top: 7.7em !important;
+        }
+    }  
+
+    .sect1 {
+        background-image: url("../images/image-himashi-phone.jpg") !important;
+      }
+    
+    .sub-section {
+        padding: 3em !important;
+        
+        h3 {
+            font-size: 1.3em !important;   
+        }
+
+        p {
+            font-size: 1.2em !important;
+        }
+
+        .links {
+            padding-top: 2.2em !important;
+        }
+    }
+
+    .sect2 {
+        background-image: url("../images/image-workdesk-phone.jpg") !important;
+            h1 {
+                font-size: 2.4em !important;
+                padding-top: 5em !important; 
+            }
+    }
+
+    .back-to-top {
+        top: 50% !important;
+    }
+}
+
+//iPhone - Landscape
+
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) { 
+    header {
+        p {
+            font-size: 1.5em !important;
+            letter-spacing: 0.5em !important;
+        }
+    }
+    .section-with-image {
+        h1 {
+            font-size: 3em !important;
+            padding-top: 6.5em !important;
+        }
+    }  
+
+    .sect1 {
+        background-image: url("../images/image-himashi-phone-landscape.jpg") !important;
+      }
+    
+    .sub-section {
+        padding: 3em !important;
+        
+        h3 {
+            font-size: 1.3em !important;   
+        }
+
+        p {
+            font-size: 1.2em !important;
+        }
+
+        .links {
+            padding-top: 2.2em !important;
+        }
+    }
+
+    .sect2 {
+        h1 {
+            font-size: 2.5em !important;
+            padding-top: 3.2em !important; 
+        }
+    }
+
+    .back-to-top {
+        top: 30% !important;
+    }
+}
+
+//iPad - Portrait & Landscape
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {   
+    .section-with-image {
+        h1 {
+            font-size: 4em !important;
+            padding-top: 14em !important;
+        }
+    }  
+
+    .sect1 {
+        background-image: url("../images/image-himashi-ipad.jpg") !important;
+      }
+    
+    .sub-section {
+        padding: 3em !important;
+        
+        h3 {
+            font-size: 2em !important;   
+        }
+
+        p {
+            font-size: 1.5em !important;
+        }
+
+        .links {
+            padding-top: 2.2em !important;
+        }
+    }
+
+    .sect2 {
+        background-image: url("../images/image-workdesk-ipad.jpg") !important;
+            h1 {
+                font-size: 4em !important;
+                padding-top: 5em !important; 
+            }
+    }
+
+    .back-to-top {
+        top: 55% !important;
+    }
+}
+
+
+

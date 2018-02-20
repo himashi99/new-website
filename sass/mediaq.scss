@@ -1,0 +1,130 @@
+//Media Queries//
+
+//Phone//
+
+@media screen and (max-device-width: 480px) {
+  .sectOne {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    // background-attachment: fixed;
+    background-image: url("../images/simpsons.jpg");
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .sectOne h1 {
+    font-size: 80px;
+    line-height: 21em;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .sub-sectOne {
+    height: 30%; 
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .links {
+    height: 150px;
+  }
+} 
+
+
+@media screen and (max-device-width: 480px) {
+  .logos {
+      width: 90px;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .sectTwo {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    // background-attachment: fixed;
+    background-image: url("../images/image-workdesk-phone.jpg");
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .back-to-top {
+    display: flex;
+    position: relative;
+    top: 75%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  #scrollup {
+    font-size: 20px;
+  }
+}
+
+
+//Tablet//
+
+@media screen and (min-device-width: 750px) and (max-device-width: 1024px) {
+  .sectOne {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    // background-attachment: scroll;
+    background-image: url("../images/image-himashi-ipad.jpg");
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+ .sectOne h1 {
+    font-size: 80px;
+    line-height: 16.5em;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .sub-sectOne { 
+    height: 40%; 
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .sectTwo {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    //background-image: url("../images/image-workdesk-phone.jpg");
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .back-to-top {
+    display: flex;
+    position: relative;
+    top: 70%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #scrollup {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6 portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .sectOne {
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    // background-attachment: fixed;
+    background-image: url("../images/image-himashi-phone.jpg");
+  }
+}

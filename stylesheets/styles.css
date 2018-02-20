@@ -482,131 +482,323 @@ template {
   box-sizing: border-box;
 }
 
-/* line 8, ../sass/styles.scss */
+@media only screen and (max-width: 520px) and (orientation: portrait) {
+  /* line 6, ../sass/partials/_media-queries.scss */
+  header p {
+    font-size: 1.6em !important;
+    letter-spacing: 0.4em !important;
+  }
+
+  /* line 14, ../sass/partials/_media-queries.scss */
+  .section-with-image h1 {
+    font-size: 5em !important;
+    padding-top: 7em !important;
+  }
+
+  /* line 20, ../sass/partials/_media-queries.scss */
+  .sect1 {
+    background-image: url("../images/image-himashi-phone.jpg");
+  }
+
+  /* line 24, ../sass/partials/_media-queries.scss */
+  .sub-section {
+    padding: 6em !important;
+  }
+  /* line 27, ../sass/partials/_media-queries.scss */
+  .sub-section h3 {
+    font-size: 1.4em !important;
+  }
+
+  /* line 32, ../sass/partials/_media-queries.scss */
+  .sect2 {
+    background-image: url("../images/image-workdesk-phone.jpg") !important;
+  }
+  /* line 35, ../sass/partials/_media-queries.scss */
+  .sect2 h1 {
+    font-size: 3.6em !important;
+    padding-top: 6em !important;
+  }
+}
+@media (max-width: 860px) and (min-width: 726px) {
+  /* line 45, ../sass/partials/_media-queries.scss */
+  .sub-section h3 {
+    font-size: 2em !important;
+  }
+}
+@media (max-width: 725px) and (min-width: 521px) {
+  /* line 54, ../sass/partials/_media-queries.scss */
+  .sub-section h3 {
+    font-size: 1.6em !important;
+  }
+
+  /* line 59, ../sass/partials/_media-queries.scss */
+  .sect2 {
+    background-image: url("../images/image-workdesk-ipad.jpg") !important;
+  }
+  /* line 62, ../sass/partials/_media-queries.scss */
+  .sect2 h1 {
+    font-size: 4em !important;
+    padding-top: 6em !important;
+  }
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  /* line 75, ../sass/partials/_media-queries.scss */
+  .section-with-image {
+    background-attachment: scroll !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+  /* line 84, ../sass/partials/_media-queries.scss */
+  header p {
+    font-size: 1.3em !important;
+    letter-spacing: 0.3em !important;
+  }
+
+  /* line 91, ../sass/partials/_media-queries.scss */
+  .section-with-image h1 {
+    font-size: 4em !important;
+    padding-top: 7.7em !important;
+  }
+
+  /* line 97, ../sass/partials/_media-queries.scss */
+  .sect1 {
+    background-image: url("../images/image-himashi-phone.jpg") !important;
+  }
+
+  /* line 101, ../sass/partials/_media-queries.scss */
+  .sub-section {
+    padding: 3em !important;
+  }
+  /* line 104, ../sass/partials/_media-queries.scss */
+  .sub-section h3 {
+    font-size: 1.3em !important;
+  }
+  /* line 108, ../sass/partials/_media-queries.scss */
+  .sub-section p {
+    font-size: 1.2em !important;
+  }
+  /* line 112, ../sass/partials/_media-queries.scss */
+  .sub-section .links {
+    padding-top: 2.2em !important;
+  }
+
+  /* line 117, ../sass/partials/_media-queries.scss */
+  .sect2 {
+    background-image: url("../images/image-workdesk-phone.jpg") !important;
+  }
+  /* line 119, ../sass/partials/_media-queries.scss */
+  .sect2 h1 {
+    font-size: 2.4em !important;
+    padding-top: 5em !important;
+  }
+
+  /* line 125, ../sass/partials/_media-queries.scss */
+  .back-to-top {
+    top: 50% !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  /* line 134, ../sass/partials/_media-queries.scss */
+  header p {
+    font-size: 1.5em !important;
+    letter-spacing: 0.5em !important;
+  }
+
+  /* line 140, ../sass/partials/_media-queries.scss */
+  .section-with-image h1 {
+    font-size: 3em !important;
+    padding-top: 6.5em !important;
+  }
+
+  /* line 146, ../sass/partials/_media-queries.scss */
+  .sect1 {
+    background-image: url("../images/image-himashi-phone-landscape.jpg") !important;
+  }
+
+  /* line 150, ../sass/partials/_media-queries.scss */
+  .sub-section {
+    padding: 3em !important;
+  }
+  /* line 153, ../sass/partials/_media-queries.scss */
+  .sub-section h3 {
+    font-size: 1.3em !important;
+  }
+  /* line 157, ../sass/partials/_media-queries.scss */
+  .sub-section p {
+    font-size: 1.2em !important;
+  }
+  /* line 161, ../sass/partials/_media-queries.scss */
+  .sub-section .links {
+    padding-top: 2.2em !important;
+  }
+
+  /* line 167, ../sass/partials/_media-queries.scss */
+  .sect2 h1 {
+    font-size: 2.5em !important;
+    padding-top: 3.2em !important;
+  }
+
+  /* line 173, ../sass/partials/_media-queries.scss */
+  .back-to-top {
+    top: 30% !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 182, ../sass/partials/_media-queries.scss */
+  .section-with-image h1 {
+    font-size: 4em !important;
+    padding-top: 14em !important;
+  }
+
+  /* line 188, ../sass/partials/_media-queries.scss */
+  .sect1 {
+    background-image: url("../images/image-himashi-ipad.jpg") !important;
+  }
+
+  /* line 192, ../sass/partials/_media-queries.scss */
+  .sub-section {
+    padding: 3em !important;
+  }
+  /* line 195, ../sass/partials/_media-queries.scss */
+  .sub-section h3 {
+    font-size: 2em !important;
+  }
+  /* line 199, ../sass/partials/_media-queries.scss */
+  .sub-section p {
+    font-size: 1.5em !important;
+  }
+  /* line 203, ../sass/partials/_media-queries.scss */
+  .sub-section .links {
+    padding-top: 2.2em !important;
+  }
+
+  /* line 208, ../sass/partials/_media-queries.scss */
+  .sect2 {
+    background-image: url("../images/image-workdesk-ipad.jpg") !important;
+  }
+  /* line 210, ../sass/partials/_media-queries.scss */
+  .sect2 h1 {
+    font-size: 4em !important;
+    padding-top: 5em !important;
+  }
+
+  /* line 216, ../sass/partials/_media-queries.scss */
+  .back-to-top {
+    top: 55% !important;
+  }
+}
+/* line 9, ../sass/styles.scss */
 body {
   font-size: 12px;
 }
 
-/* line 12, ../sass/styles.scss */
-header {
-  height: 10vh;
-  display: flex;
-}
-/* line 16, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 header p {
-  font-family: Source Sans Pro, sans-serif;
+  font: 1.9em Source Sans Pro, sans-serif;
   letter-spacing: 0.5em;
-  font-size: 1.9em;
   padding-left: 1em;
 }
 
-/* line 24, ../sass/styles.scss */
-.section {
-  height: 110vh;
+/* line 21, ../sass/styles.scss */
+.section-with-image {
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
 }
-/* line 30, ../sass/styles.scss */
-.section h1 {
-  margin: 0;
+/* line 24, ../sass/styles.scss */
+.section-with-image h1 {
+  font: bold 5.5em Bariol, sans-serif;
   color: #fff;
-  font-family: Bariol, sans-serif;
-  font-size: 6.6em;
   text-transform: uppercase;
-  padding-top: 5.5em;
+  margin: 0;
+  padding-top: 4em;
   text-align: center;
+  font-size: 6.6em;
+  padding-top: 5.5em;
 }
 
-/* line 41, ../sass/styles.scss */
-.sub-section {
-  background-color: #fff;
-  padding: 8em;
-}
-
-/* line 46, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .sect1 {
   background-image: url("../images/image-himashi.jpg");
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
+.sub-section {
+  background-color: #fff;
+  padding: 8em;
+}
+/* line 38, ../sass/styles.scss */
 .sub-section h3 {
+  font: bold 2.5em Palatino, serif;
   text-align: center;
-  font-size: 30px;
-  font-family: Palatino;
 }
-/* line 58, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 .sub-section p {
-  font-size: 18px;
-  font-family: Palatino;
-  padding-top: 25px;
+  font-size: 1.5em;
+  padding-top: 1em;
 }
-/* line 63, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 .sub-section p a {
   font-weight: bolder;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 1.2em;
 }
-/* line 70, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 .sub-section .links {
   list-style-type: none;
   text-align: center;
-  padding-top: 60px;
-  height: 100px;
+  padding-top: 5em;
+  padding-left: 0;
 }
-/* line 76, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .sub-section .links li {
   display: inline;
 }
-/* line 81, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .sub-section .logos {
   width: 5em;
   padding-right: 1.5em;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .sect2 {
   background-image: url("../images/image-workdesk.jpg");
 }
-/* line 90, ../sass/styles.scss */
-.sect2 h2 {
+/* line 72, ../sass/styles.scss */
+.sect2 h1 {
+  font: bold 5.5em Bariol, sans-serif;
   color: #fff;
-  font-family: Bariol, sans-serif;
-  font-weight: bold;
-  font-size: 66px;
   text-transform: uppercase;
-  text-align: center;
-  margin: 0px;
-  padding-top: 5.5em;
-}
-/* line 101, ../sass/styles.scss */
-.sect2 p {
-  margin-top: 1.5em;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+  padding-top: 4em;
   text-align: center;
 }
-/* line 109, ../sass/styles.scss */
-.sect2 a {
+/* line 76, ../sass/styles.scss */
+.sect2 #email-address {
+  margin: 1.5em 0 0 0;
+  text-align: center;
+}
+/* line 80, ../sass/styles.scss */
+.sect2 #email-address a {
   color: #fff;
-  font-size: 25px;
+  font-size: 2em;
   text-align: center;
 }
-/* line 115, ../sass/styles.scss */
-.sect2 a:hover, .sect2 a:active {
+/* line 85, ../sass/styles.scss */
+.sect2 #email-address a a:hover, .sect2 #email-address a a:active {
   color: #822034;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 .back-to-top {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 40%;
+  top: 37%;
 }
-
-/* line 127, ../sass/styles.scss */
-.scroll-to-top {
+/* line 97, ../sass/styles.scss */
+.back-to-top .scroll-to-top {
   background: none;
   border: none;
   margin: 0;
@@ -616,192 +808,9 @@ header p {
   color: #fff;
   text-transform: uppercase;
   text-decoration: underline;
+  cursor: pointer;
 }
-
-/* line 141, ../sass/styles.scss */
-.scroll-to-top:hover {
+/* line 105, ../sass/styles.scss */
+.back-to-top .scroll-to-top .scroll-to-top:hover {
   color: #822034;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* line 149, ../sass/styles.scss */
-  .top p {
-    letter-spacing: 11px;
-    font-size: 19px;
-    padding-left: 20px;
-    padding-right: 90px;
-  }
-
-  /* line 156, ../sass/styles.scss */
-  .section {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  /* line 163, ../sass/styles.scss */
-  .sect1 {
-    background-image: url("../images/image-himashi-phone.jpg");
-  }
-  /* line 166, ../sass/styles.scss */
-  .sect1 h1 {
-    font-size: 40px;
-    line-height: 20em;
-  }
-
-  /* line 172, ../sass/styles.scss */
-  .sub-section {
-    height: 95%;
-  }
-  /* line 175, ../sass/styles.scss */
-  .sub-section .contain {
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-right: 35px;
-    padding-left: 35px;
-  }
-  /* line 181, ../sass/styles.scss */
-  .sub-section .contain h3 {
-    font-size: 20px;
-  }
-
-  /* line 187, ../sass/styles.scss */
-  .links {
-    padding-top: 80px;
-    height: 100px;
-  }
-
-  /* line 192, ../sass/styles.scss */
-  .sect2 {
-    background-image: url("../images/image-workdesk-phone.jpg");
-    overflow: hidden;
-  }
-  /* line 196, ../sass/styles.scss */
-  .sect2 h2 {
-    padding-top: 30px;
-    font-size: 50px;
-    line-height: 100px;
-  }
-
-  /* line 203, ../sass/styles.scss */
-  .sect2 a {
-    font-size: 20px;
-  }
-
-  /* line 207, ../sass/styles.scss */
-  .back-to-top {
-    top: 40%;
-  }
-
-  /* line 211, ../sass/styles.scss */
-  #scrollup {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 219, ../sass/styles.scss */
-  .section {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  /* line 226, ../sass/styles.scss */
-  .sect1 {
-    background-image: url("../images/image-himashi-phone-landscape.jpg");
-  }
-  /* line 229, ../sass/styles.scss */
-  .sect1 h1 {
-    font-size: 40px;
-    line-height: 15em;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 237, ../sass/styles.scss */
-  .sub-section {
-    height: 95%;
-  }
-  /* line 240, ../sass/styles.scss */
-  .sub-section .contain {
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-right: 35px;
-    padding-left: 35px;
-  }
-  /* line 246, ../sass/styles.scss */
-  .sub-section .contain h3 {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 254, ../sass/styles.scss */
-  .contain p {
-    font-size: 10px;
-  }
-  /* line 257, ../sass/styles.scss */
-  .contain p a {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 264, ../sass/styles.scss */
-  .links {
-    padding-top: 60px;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 270, ../sass/styles.scss */
-  .sect2 {
-    overflow: hidden;
-  }
-  /* line 273, ../sass/styles.scss */
-  .sect2 h2 {
-    padding-top: 30px;
-    font-size: 50px;
-    line-height: 100px;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 282, ../sass/styles.scss */
-  .back-to-top {
-    top: 40%;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* line 288, ../sass/styles.scss */
-  #scrollup {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 297, ../sass/styles.scss */
-  .section {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  /* line 304, ../sass/styles.scss */
-  .sect1 {
-    background-image: url("../images/image-himashi-ipad.jpg");
-  }
-  /* line 307, ../sass/styles.scss */
-  .sect1 h1 {
-    line-height: 19em;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 314, ../sass/styles.scss */
-  .sect2 {
-    background-image: url("../images/image-workdesk-ipad.jpg");
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 320, ../sass/styles.scss */
-  #scrollup {
-    font-size: 19px;
-  }
 }

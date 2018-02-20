@@ -4,43 +4,28 @@
 @import "partials/base";
 @import "partials/layout";
 @import "partials/mixins";
+@import "partials/media-queries";
 
 body {
-  font-size: 12px;
+  font-size: $root-font-size;
+}
+  header {
+    
+    p {
+      font: 1.9em Source Sans Pro, sans-serif;
+      letter-spacing: 0.5em;
+      padding-left: 1em;
+    }
 }
 
-header {
-  height: 10vh;
-  display: flex;
-
-  p {
-    font-family: Source Sans Pro, sans-serif;
-    letter-spacing: 0.5em;
-    font-size: 1.9em;
-    padding-left: 1em;
-  }
-}
-
-.section {
-  height: 110vh; 
-  // width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
+.section-with-image {
+  @include repeating-section-with-image;
 
   h1 {
-    margin: 0;
-    color: $primary-color;
-    font-family: Bariol, sans-serif;
+    @include section-title;
     font-size: 6.6em;
-    text-transform: uppercase;
     padding-top: 5.5em;
-    text-align: center;
   }
-}
-
-.sub-section {
-  background-color: $primary-color;
-  padding: 8em;
 }
 
 .sect1 {
@@ -48,30 +33,27 @@ header {
 }
 
 .sub-section {
+  @include sub-section-with-text;
 
   h3 {
-    text-align: center;
-    font-size: 30px;
-    font-family: Palatino;
+    @include sub-section-title;
   }
 
   p {
-    font-size: 18px;
-    font-family: Palatino;
-    padding-top: 25px;
+    @include sub-section-para;
 
     a {
       font-weight: bolder;
       font-style: oblique;
-      font-size: 20px;
+      font-size: 1.2em;
     }
   }
 
   .links {
     list-style-type: none;
     text-align: center;
-    padding-top: 60px;
-    height: 100px;  
+    padding-top: 5em;
+    padding-left: 0;
 
     li {
       display: inline;
@@ -87,237 +69,41 @@ header {
 .sect2 {
   background-image: url("../images/image-workdesk.jpg");
 
-  h2 {
-    color: $primary-color;
-    font-family: Bariol, sans-serif;
-    font-weight: bold;
-    font-size: 66px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0px;
-    padding-top: 5.5em;
+  h1 {
+    @include section-title;
   }
 
-  p {
-    margin-top: 1.5em;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+  #email-address {
+    margin: 1.5em 0 0 0;
     text-align: center;
-  }
 
-  a {
-    color: $primary-color;
-    font-size: 25px;
-    text-align: center;
-  }
+    a {
+      color: $primary-color;
+      font-size: 2em;
+      text-align: center;
 
-  a:hover, a:active { 
-   color: #822034;
- }
+      a:hover, a:active { 
+        color: #822034;
+      }
+    } 
+  }
 }
 
 .back-to-top {
-  display: flex;
-  justify-content: center;
+  @include center-div;
   position: relative;
-  top: 40%;
-}
+  top: 37%;
 
-.scroll-to-top {
-  // -webkit-transition-duration: 0.4s; /* Safari */
-  // transition-duration: 0.4s;
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  font-size: 1.2em;
-  color: $primary-color;
-  text-transform: uppercase;
-  text-decoration: underline;
- }
+  .scroll-to-top {
+    @include button-no-property;
+    font-size: 1.2em;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
 
- .scroll-to-top:hover {
-  color: #822034;
-}
-//Media Queries//
-
-//Phone - Portrait/
-
-@media (min-width : 320px) and (max-width : 480px) {
-  .top p {
-    letter-spacing: 11px;
-    font-size: 19px;
-    padding-left: 20px;
-    padding-right: 90px;
-  }
-
-  .section {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .sect1 {
-    background-image: url("../images/image-himashi-phone.jpg");
-
-    h1 {
-      font-size: 40px;
-      line-height: 20em;
+    .scroll-to-top:hover {
+      color: #822034;
     }
-  }
-
-  .sub-section {
-    height: 95%;
-
-    .contain {
-      padding-top: 25px;
-      padding-bottom: 20px;
-      padding-right: 35px;
-      padding-left: 35px;
-
-      h3 {
-        font-size: 20px;
-      }
-    }
-  }
-
-  .links {
-    padding-top: 80px;
-    height: 100px;
-  } 
-
-  .sect2 {
-    background-image: url("../images/image-workdesk-phone.jpg");
-    overflow: hidden;
-
-    h2 {
-      padding-top: 30px;
-      font-size: 50px;
-      line-height: 100px;  
-    }
-  }
-
-  .sect2 a {
-    font-size: 20px;
-  }
-
-  .back-to-top {
-    top: 40%;
-  }
-
-  #scrollup {
-    font-size: 14px;
-  }
-}
-
-//Phone - Landscape/
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-  .section {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .sect1 {
-    background-image: url("../images/image-himashi-phone-landscape.jpg");
-
-    h1 {
-      font-size: 40px;
-      line-height: 15em;
-    }
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-  .sub-section {
-    height: 95%;
-
-    .contain {
-      padding-top: 25px;
-      padding-bottom: 20px;
-      padding-right: 35px;
-      padding-left: 35px;
-
-      h3 {
-        font-size: 20px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-  .contain p {
-    font-size: 10px;
-
-    a {
-      font-size: 18px;
-    }
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-  .links {
-    padding-top: 60px;
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
-  .sect2 {
-    overflow: hidden;
-
-    h2 {
-      padding-top: 30px;
-      font-size: 50px;
-      line-height: 100px;  
-    }
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
-  .back-to-top {
-    top: 40%;
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
-  #scrollup {
-    font-size: 14px;
-  }
-}
-
-
-//Ipad/
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
-  .section {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .sect1 {
-    background-image: url("../images/image-himashi-ipad.jpg");
-
-    h1 {
-      line-height: 19em;
-    }
-  }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
-  .sect2 {
-    background-image: url("../images/image-workdesk-ipad.jpg");
-  }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
-  #scrollup {
-    font-size: 19px;
   }
 }
