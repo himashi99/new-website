@@ -19,7 +19,7 @@
   color: $primary-color;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 4em;
+  padding-top: 3em;
   text-align: center;
 }
 
@@ -44,4 +44,16 @@
   margin: 0;
   padding: 0;
   outline: none;
+}
+
+@mixin respond-to($media) {
+  @media only screen and #{$media} and (orientation: portrait) {
+      @content;
+  }
+}
+
+@mixin respond-to-landscape($media) {
+  @media only screen and #{$media} and (orientation: landscape) {
+      @content;
+  }
 }

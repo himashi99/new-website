@@ -15,6 +15,20 @@ body {
       font: 1.9em Source Sans Pro, sans-serif;
       letter-spacing: 0.5em;
       padding-left: 1em;
+
+      @include respond-to($bp1) {
+        font-size: 1.3em;
+        letter-spacing: 0.4em;
+      }
+
+      @include respond-to($bp2) {
+        font-size: 1.6em;
+        letter-spacing: 0.4em;
+      }
+
+      @include respond-to-landscape($bp2) {
+        font-size: 1.5em;
+      } 
     }
 }
 
@@ -23,8 +37,22 @@ body {
 
   h1 {
     @include section-title;
-    font-size: 6.6em;
-    padding-top: 5.5em;
+      font-size: 6.6em;
+      padding-top: 5.5em;
+
+    @include respond-to($bp1) {
+      font-size: 4em;
+      padding-top: 9em;
+    }
+
+    @include respond-to($bp2) {
+      padding-top: 5.5em;
+    } 
+    
+    @include respond-to-landscape($bp2) {
+      font-size: 3.5em;
+      padding-top: 5em;
+    }  
   }
 }
 
@@ -35,8 +63,43 @@ body {
 .sub-section {
   @include sub-section-with-text;
 
+  @include respond-to($bp1) {
+    padding: 4em;
+  }
+
+  @include respond-to($bp2) {
+    padding: 6em;
+  }
+
+  @include respond-to-landscape($bp2) {
+    padding: 4em;
+  }
+
   h3 {
     @include sub-section-title;
+
+    @include respond-to($bp1) {
+      font-size: 1.4em;
+    }
+
+    @include respond-to($bp2) {
+      font-size: 1.9em;
+    }
+
+    br {
+      
+      @include respond-to($bp1) {
+        dsplay: none;
+      }
+  
+      @include respond-to($bp2) {
+        display: none;
+      }
+
+      @include respond-to-landscape($bp2) {
+        display: none;
+      }   
+    }
   }
 
   p {
@@ -69,8 +132,31 @@ body {
 .sect2 {
   background-image: url("../images/image-workdesk.jpg");
 
+  @include respond-to($bp1) {
+    background-image: url("../images/image-workdesk-phone.jpg");
+  }
+
+  @include respond-to($bp2) {
+    background-image: url("../images/image-workdesk-ipad.jpg");
+  }
+
   h1 {
     @include section-title;
+
+    @include respond-to($bp1) {
+      font-size: 2.4em;
+      padding-top: 5.5em; 
+    }
+
+    @include respond-to($bp2) {
+      font-size: 3.6em;
+      padding-top: 5em; 
+    }
+
+    @include respond-to-landscape($bp2) {
+      font-size: 3em;
+      padding-top: 2em;
+    }  
   }
 
   #email-address {
@@ -82,6 +168,10 @@ body {
       font-size: 2em;
       text-align: center;
 
+      @include respond-to($bp1) {
+        font-size: 1.7em;
+      }
+
       a:hover, a:active { 
         color: #822034;
       }
@@ -92,7 +182,7 @@ body {
 .back-to-top {
   @include center-div;
   position: relative;
-  top: 37%;
+  top: 45%;
 
   .scroll-to-top {
     @include button-no-property;
