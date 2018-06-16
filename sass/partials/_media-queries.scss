@@ -3,7 +3,7 @@
 @supports (-webkit-overflow-scrolling: touch) {
     //     /* CSS specific to iOS devices */ 
     .section-with-image {
-        background-attachment: scroll !important;
+        background-attachment: initial !important;
     }
 }
 //all other devices, fixed backgound

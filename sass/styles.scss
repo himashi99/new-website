@@ -34,6 +34,9 @@ body {
 
 .section-with-image {
   @include repeating-section-with-image;
+  @include respond-to($bp1) {
+    background-attachment: initial !important;
+  }
 
   h1 {
     @include section-title;
