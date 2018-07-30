@@ -10,11 +10,15 @@ body {
   font-size: $root-font-size;
 }
   header {
-    
+
     p {
-      font: 1.9em Source Sans Pro, sans-serif;
-      letter-spacing: 0.5em;
+      font: 1.5em Source Sans Pro, sans-serif;
       padding-left: 1em;
+      letter-spacing: 0.5em;
+      font-weight: 100;
+      text-transform: uppercase;
+      color: gray;
+
 
       @include respond-to($bp1) {
         font-size: 1.3em;
@@ -28,7 +32,7 @@ body {
 
       @include respond-to-landscape($bp2) {
         font-size: 1.5em;
-      } 
+      }
     }
 }
 
@@ -50,12 +54,12 @@ body {
 
     @include respond-to($bp2) {
       padding-top: 5.5em;
-    } 
-    
+    }
+
     @include respond-to-landscape($bp2) {
       font-size: 3.5em;
       padding-top: 5em;
-    }  
+    }
   }
 }
 
@@ -90,18 +94,18 @@ body {
     }
 
     br {
-      
+
       @include respond-to($bp1) {
         dsplay: none;
       }
-  
+
       @include respond-to($bp2) {
         display: none;
       }
 
       @include respond-to-landscape($bp2) {
         display: none;
-      }   
+      }
     }
   }
 
@@ -148,18 +152,18 @@ body {
 
     @include respond-to($bp1) {
       font-size: 2.4em;
-      padding-top: 5.5em; 
+      padding-top: 5.5em;
     }
 
     @include respond-to($bp2) {
       font-size: 3.6em;
-      padding-top: 5em; 
+      padding-top: 5em;
     }
 
     @include respond-to-landscape($bp2) {
       font-size: 3em;
       padding-top: 2em;
-    }  
+    }
   }
 
   #email-address {
@@ -175,10 +179,10 @@ body {
         font-size: 1.7em;
       }
 
-      a:hover, a:active { 
+      a:hover, a:active {
         color: #822034;
       }
-    } 
+    }
   }
 }
 

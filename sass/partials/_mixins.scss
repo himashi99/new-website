@@ -8,14 +8,14 @@
 }
 
 @mixin repeating-section-with-image {
-  height: 100vh; 
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
 }
 
 @mixin section-title {
-  font: bold 5.5em Bariol, sans-serif;
+  font: 5.5em Numans, sans-serif;
   color: $primary-color;
   text-transform: uppercase;
   margin: 0;
@@ -29,13 +29,18 @@
 }
 
 @mixin sub-section-title {
-  font: bold 2.5em Palatino, serif;
+  font: 2.5em Montserrat, sans-serif;
   text-align: center;
 }
 
 @mixin sub-section-para {
-  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
   padding-top: 1em;
+  padding-left: 15em;
+  padding-right: 15em;
+  line-height: 1.7em;
 }
 
 @mixin button-no-property {
