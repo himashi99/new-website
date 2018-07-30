@@ -1,6 +1,6 @@
 // Back to Top Scroll
-var speed = 10;
-var timer;
+let speed = 10;
+let timer;
 function scrollToTop(k) {
   if (k>0) {
     k-=speed;
@@ -16,8 +16,8 @@ document.getElementById("scrollup").onclick=function () {
 }
 
 //Typewrite Text Effect on Greeting
-var i = 0;
-var text = "Hi I'm Himashi|";
+let i = 0;
+let text = "Hi I'm Himashi|";
 
 function typing() {
   if (i<text.length) {
@@ -27,11 +27,14 @@ function typing() {
   }
 }
 
+
 //Call function once page has loaded
 
-document.addEventListener("DOMContentLoaded", function() {
-  typing();
-});
-// window.onload = function() {
+// document.addEventListener("DOMContentLoaded", function() {
 //   typing();
-// };
+// });
+
+
+window.onload = function() {
+  typing();
+};
