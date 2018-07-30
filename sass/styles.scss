@@ -136,6 +136,49 @@ body {
   }
 }
 
+.computer-image {
+  background-image: url("../images/passion.jpg");
+}
+
+.projects-section {
+  height: 85em;
+  background-color: $primary-color;
+  padding: 8em;
+
+  h3 {
+    @include sub-section-title;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 6em;
+    justify-content: center;
+
+    li {
+      padding-right: 5em;
+      padding-bottom: 5em;
+    }
+  }
+
+  .project-tile {
+  width: 21em;
+  height: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid;
+  border-color: rgb(229,234,238);
+
+    p {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+}
+
 .sect2 {
   background-image: url("../images/image-workdesk.jpg");
 

@@ -678,22 +678,68 @@ header p {
 }
 
 /* line 139, ../sass/styles.scss */
+.computer-image {
+  background-image: url("../images/passion.jpg");
+}
+
+/* line 143, ../sass/styles.scss */
+.projects-section {
+  height: 85em;
+  background-color: #fff;
+  padding: 8em;
+}
+/* line 148, ../sass/styles.scss */
+.projects-section h3 {
+  font: 2.5em Montserrat, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 153, ../sass/styles.scss */
+.projects-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 6em;
+  justify-content: center;
+}
+/* line 160, ../sass/styles.scss */
+.projects-section ul li {
+  padding-right: 5em;
+  padding-bottom: 5em;
+}
+/* line 166, ../sass/styles.scss */
+.projects-section .project-tile {
+  width: 21em;
+  height: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid;
+  border-color: #e5eaee;
+}
+/* line 175, ../sass/styles.scss */
+.projects-section .project-tile p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* line 182, ../sass/styles.scss */
 .sect2 {
   background-image: url("../images/image-workdesk.jpg");
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 139, ../sass/styles.scss */
+  /* line 182, ../sass/styles.scss */
   .sect2 {
     background-image: url("../images/image-workdesk-phone.jpg");
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 139, ../sass/styles.scss */
+  /* line 182, ../sass/styles.scss */
   .sect2 {
     background-image: url("../images/image-workdesk-ipad.jpg");
   }
 }
-/* line 150, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .sect2 h1 {
   font: 5.5em Numans, sans-serif;
   color: #fff;
@@ -703,56 +749,56 @@ header p {
   text-align: center;
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 150, ../sass/styles.scss */
+  /* line 193, ../sass/styles.scss */
   .sect2 h1 {
     font-size: 2.4em;
     padding-top: 5.5em;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 150, ../sass/styles.scss */
+  /* line 193, ../sass/styles.scss */
   .sect2 h1 {
     font-size: 3.6em;
     padding-top: 5em;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 150, ../sass/styles.scss */
+  /* line 193, ../sass/styles.scss */
   .sect2 h1 {
     font-size: 3em;
     padding-top: 2em;
   }
 }
-/* line 169, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 .sect2 #email-address {
   margin: 1.5em 0 0 0;
   text-align: center;
 }
-/* line 173, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .sect2 #email-address a {
   color: #fff;
   font-size: 2em;
   text-align: center;
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 173, ../sass/styles.scss */
+  /* line 216, ../sass/styles.scss */
   .sect2 #email-address a {
     font-size: 1.7em;
   }
 }
-/* line 182, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .sect2 #email-address a a:hover, .sect2 #email-address a a:active {
   color: #822034;
 }
 
-/* line 189, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .back-to-top {
   display: flex;
   justify-content: center;
   position: relative;
   top: 45%;
 }
-/* line 194, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .back-to-top .scroll-to-top {
   background: none;
   border: none;
@@ -765,7 +811,7 @@ header p {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 202, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .back-to-top .scroll-to-top .scroll-to-top:hover {
   color: #822034;
 }
