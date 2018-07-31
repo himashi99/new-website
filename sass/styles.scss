@@ -218,18 +218,27 @@ body {
     }
   }
 
+  a {
+    text-decoration: none;
+  }
   .project-tile {
-  width: 21em;
-  height: 25em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid;
-  border-color: rgb(229,234,238);
+    width: 21em;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid;
+    border-color: rgb(229,234,238);
+
 
     p {
       text-align: center;
       font-size: 1.2em;
+      color: darkslategray;
+    }
+
+    p:hover {
+      color: forestgreen;
     }
   }
 }
