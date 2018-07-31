@@ -34,8 +34,16 @@ function typing() {
   }
 }
 
+
+  // $('<img/>').attr('src', '../images/image-himashi-sized.jpg').on('load', function() {
+  //   $(this).remove();
+  //   $('body').css('background-image', url('../images/image-himashi-sized.jpg'));
+  //
+  //   alert("hi");
+  // })
+
 // Start Typing for first time
-setTimeout(typing,700); // 700ms delay before typing starts first time
+setTimeout(typing,2000); // 700ms delay before typing starts first time
 
 // Erase function
 function erase() {
