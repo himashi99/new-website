@@ -30,12 +30,12 @@ function typing() {
     i++;
     setTimeout(typing,120); //call this function again to type all letters
   } else {
-    setTimeout(erase,90);
+    setTimeout(erase,1000); //1s delay before erasing starts
   }
 }
 
-// Start Typing
-setTimeout(typing,120);
+// Start Typing for first time
+setTimeout(typing,700); // 700ms delay before typing starts first time
 
 // Erase function
 function erase() {
@@ -45,7 +45,7 @@ function erase() {
     i--;
     setTimeout(erase,90);
   } else {
-    setTimeout(typing,120);
+    setTimeout(typing,700); //700ms delay before typing starts again
   }
 }
 
