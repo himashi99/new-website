@@ -43,7 +43,7 @@ function typing() {
   // })
 
 // Start Typing for first time
-setTimeout(typing,2000); // 700ms delay before typing starts first time
+setTimeout(typing,3000); // 700ms delay before typing starts first time
 
 // Erase function
 function erase() {
