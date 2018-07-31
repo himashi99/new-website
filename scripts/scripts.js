@@ -15,14 +15,36 @@ document.getElementById("scrollup").onclick=function () {
   scrollToTop(document.documentElement.scrollHeight);
 }
 
-//Typewrite Text Effect on Greeting
+// Typewrite Text Effect on Greeting
+
+
+// Empty the string from
+document.getElementById("greeting").innerHTML = '';
+
 let i = 0;
-let text = "Hi I'm Himashi|";
+let greeting = "Hi I'm Himashi";
 
 function typing() {
-  if (i<text.length) {
-    document.getElementById("text").innerHTML += text.charAt(i);
+  if (i < greeting.length) {
+    document.getElementById("greeting").innerHTML += greeting.charAt(i);
     i++;
+    setTimeout(typing,120); //call this function again to type all letters
+  } else {
+    setTimeout(erase,90);
+  }
+}
+
+// Start Typing
+setTimeout(typing,120);
+
+// Erase function
+function erase() {
+  if (i >= 0) {
+    let temp = greeting.substring(0, i); //extracts substring between 0 and i-th position
+    document.getElementById("greeting").innerHTML = temp;
+    i--;
+    setTimeout(erase,90);
+  } else {
     setTimeout(typing,120);
   }
 }
@@ -35,6 +57,6 @@ function typing() {
 // });
 
 
-window.onload = function() {
-  typing();
-};
+// window.onload = function() {
+//   typing();
+// };
