@@ -587,76 +587,90 @@ header p {
   animation: blinker 0.5s linear infinite;
   color: bisque;
 }
+@media only screen and (max-width: 519px) and (orientation: portrait) {
+  /* line 73, ../sass/styles.scss */
+  .section-with-image .type-cursor {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+  /* line 73, ../sass/styles.scss */
+  .section-with-image .type-cursor {
+    display: none;
+  }
+}
 
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
-/* line 85, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 .sect1 {
   background-image: url("../images/image-himashi-sized.jpg");
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .sub-section {
   background-color: #fff;
   padding: 8em;
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 89, ../sass/styles.scss */
+  /* line 97, ../sass/styles.scss */
   .sub-section {
     padding: 4em;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 89, ../sass/styles.scss */
+  /* line 97, ../sass/styles.scss */
   .sub-section {
     padding: 6em;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 89, ../sass/styles.scss */
+  /* line 97, ../sass/styles.scss */
   .sub-section {
     padding: 4em;
   }
 }
-/* line 104, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .sub-section h3 {
   font: 2.5em Montserrat, sans-serif;
   text-align: center;
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 104, ../sass/styles.scss */
+  /* line 112, ../sass/styles.scss */
   .sub-section h3 {
     font-size: 1.4em;
+    font-weight: bold;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 104, ../sass/styles.scss */
+  /* line 112, ../sass/styles.scss */
   .sub-section h3 {
     font-size: 1.9em;
+    font-weight: bold;
   }
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 115, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .sub-section h3 br {
     dsplay: none;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 115, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .sub-section h3 br {
     display: none;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 115, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .sub-section h3 br {
     display: none;
   }
 }
-/* line 131, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .sub-section p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -667,84 +681,84 @@ header p {
   line-height: 1.7em;
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 131, ../sass/styles.scss */
+  /* line 141, ../sass/styles.scss */
   .sub-section p {
     padding-left: 3em;
     padding-right: 3em;
   }
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 131, ../sass/styles.scss */
+  /* line 141, ../sass/styles.scss */
   .sub-section p {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
   }
 }
-/* line 144, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 .sub-section p a {
   font-weight: bolder;
   font-style: oblique;
   font-size: 1.2em;
 }
-/* line 151, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .sub-section .links {
   list-style-type: none;
   text-align: center;
   padding-top: 5em;
   padding-left: 0;
 }
-/* line 157, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .sub-section .links li {
   display: inline;
 }
-/* line 162, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .sub-section .logos {
   width: 5em;
   padding-right: 1.5em;
 }
 
-/* line 168, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .computer-image {
   background-image: url("../images/passion.jpg");
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 168, ../sass/styles.scss */
+  /* line 178, ../sass/styles.scss */
   .computer-image {
     background-image: url("../images/passion-phone.jpg");
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 168, ../sass/styles.scss */
+  /* line 178, ../sass/styles.scss */
   .computer-image {
     background-image: url("../images/passion-ipad.jpg");
   }
 }
 
-/* line 180, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .projects-section {
   height: 85em;
   background-color: #fff;
   padding: 8em;
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 180, ../sass/styles.scss */
+  /* line 190, ../sass/styles.scss */
   .projects-section {
     height: 200em;
   }
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 180, ../sass/styles.scss */
+  /* line 190, ../sass/styles.scss */
   .projects-section {
     height: 200em;
   }
 }
-/* line 193, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .projects-section h3 {
   font: 2.5em Montserrat, sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 198, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .projects-section ul {
   display: flex;
   flex-wrap: wrap;
@@ -752,12 +766,12 @@ header p {
   margin-top: 6em;
   justify-content: center;
 }
-/* line 205, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .projects-section ul li {
   padding-right: 5em;
   padding-bottom: 5em;
 }
-/* line 211, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 .projects-section .project-tile {
   width: 21em;
   height: 25em;
@@ -767,29 +781,29 @@ header p {
   border: 5px solid;
   border-color: #e5eaee;
 }
-/* line 220, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .projects-section .project-tile p {
   text-align: center;
   font-size: 1.2em;
 }
 
-/* line 227, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .sect2 {
   background-image: url("../images/image-workdesk.jpg");
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 227, ../sass/styles.scss */
+  /* line 237, ../sass/styles.scss */
   .sect2 {
     background-image: url("../images/image-workdesk-phone.jpg");
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 227, ../sass/styles.scss */
+  /* line 237, ../sass/styles.scss */
   .sect2 {
     background-image: url("../images/image-workdesk-ipad.jpg");
   }
 }
-/* line 238, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .sect2 h1 {
   font: bold 5.5em Numans, sans-serif;
   color: #fff;
@@ -799,56 +813,56 @@ header p {
   text-align: center;
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 238, ../sass/styles.scss */
+  /* line 248, ../sass/styles.scss */
   .sect2 h1 {
     font-size: 2.4em;
     padding-top: 5.5em;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 238, ../sass/styles.scss */
+  /* line 248, ../sass/styles.scss */
   .sect2 h1 {
     font-size: 3.6em;
     padding-top: 5em;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 238, ../sass/styles.scss */
+  /* line 248, ../sass/styles.scss */
   .sect2 h1 {
     font-size: 3em;
     padding-top: 2em;
   }
 }
-/* line 257, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 .sect2 #email-address {
   margin: 1.5em 0 0 0;
   text-align: center;
 }
-/* line 261, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .sect2 #email-address a {
   color: #fff;
   font-size: 2em;
   text-align: center;
 }
 @media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 261, ../sass/styles.scss */
+  /* line 271, ../sass/styles.scss */
   .sect2 #email-address a {
     font-size: 1.7em;
   }
 }
-/* line 270, ../sass/styles.scss */
+/* line 280, ../sass/styles.scss */
 .sect2 #email-address a a:hover, .sect2 #email-address a a:active {
   color: #822034;
 }
 
-/* line 277, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 .back-to-top {
   display: flex;
   justify-content: center;
   position: relative;
   top: 45%;
 }
-/* line 282, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 .back-to-top .scroll-to-top {
   background: none;
   border: none;
@@ -861,7 +875,7 @@ header p {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 290, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 .back-to-top .scroll-to-top .scroll-to-top:hover {
   color: #822034;
 }

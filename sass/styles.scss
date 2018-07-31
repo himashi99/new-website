@@ -73,6 +73,14 @@ body {
   .type-cursor {
     animation: blinker 0.5s linear infinite;
     color: bisque;
+
+    @include respond-to($bp1) {
+      display: none;
+    }
+
+    @include respond-to($bp2) {
+      display: none;
+    }
   }
 }
 
@@ -106,10 +114,12 @@ body {
 
     @include respond-to($bp1) {
       font-size: 1.4em;
+      font-weight: bold;
     }
 
     @include respond-to($bp2) {
       font-size: 1.9em;
+      font-weight: bold;
     }
 
     br {
@@ -137,8 +147,8 @@ body {
     }
 
     @include respond-to($bp1) {
-      padding-left: 1em;
-      padding-right: 1em;
+      padding-left: 0.3em;
+      padding-right: 0.3em;
     }
 
     a {
