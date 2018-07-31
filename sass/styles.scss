@@ -52,7 +52,6 @@ body {
   #greeting, .type-cursor{
     @include section-title;
       font-size: 6.6em;
-      font-weight: bold;
       padding-top: 5.5em;
 
     @include respond-to($bp1) {
@@ -132,6 +131,16 @@ body {
   p {
     @include sub-section-para;
 
+    @include respond-to($bp2) {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    @include respond-to($bp1) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
     a {
       font-weight: bolder;
       font-style: oblique;
@@ -158,12 +167,28 @@ body {
 
 .computer-image {
   background-image: url("../images/passion.jpg");
+
+  @include respond-to($bp1) {
+    background-image: url("../images/passion-phone.jpg");
+  }
+
+  @include respond-to($bp2) {
+    background-image: url("../images/passion-ipad.jpg");
+  }
 }
 
 .projects-section {
   height: 85em;
   background-color: $primary-color;
   padding: 8em;
+
+  @include respond-to($bp2) {
+    height: 200em;
+  }
+
+  @include respond-to($bp1) {
+    height: 200em;
+  }
 
   h3 {
     @include sub-section-title;

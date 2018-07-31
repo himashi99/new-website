@@ -1,7 +1,7 @@
 //iOS only removed fixed background property
 
 @supports (-webkit-overflow-scrolling: touch) {
-    //     /* CSS specific to iOS devices */ 
+    //     /* CSS specific to iOS devices */
     .section-with-image {
         background-attachment: initial !important;
     }
@@ -9,7 +9,7 @@
 //all other devices, fixed backgound
 
 @supports not (-webkit-overflow-scrolling: touch) {
-    /* CSS for other than iOS devices */ 
+    /* CSS for other than iOS devices */
     .section-with-image {
         background-attachment: fixed !important;
   }
@@ -17,7 +17,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        color: red !important;
+        // color: red !important;
           }
-      
+
 }
