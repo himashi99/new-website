@@ -69,6 +69,14 @@ body {
     }
   }
 
+  #greeting {
+    font-weight: bold;
+  }
+
+  .type-cursor {
+    font-weight: 100;
+  }
+
 // Blinking cursor
   .type-cursor {
     animation: blinker 0.5s linear infinite;
