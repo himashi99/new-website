@@ -6,48 +6,40 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-/* line 12, ../sass/partials/_normalize.scss */
 html {
   line-height: 1.15;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Sections
    ========================================================================== */
 /**
  * Remove the margin in all browsers (opinionated).
  */
-/* line 25, ../sass/partials/_normalize.scss */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
  * Add the correct display in IE 9-.
  */
-/* line 33, ../sass/partials/_normalize.scss */
 article,
 aside,
 footer,
 header,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 47, ../sass/partials/_normalize.scss */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -55,47 +47,39 @@ h1 {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in IE.
  */
-/* line 60, ../sass/partials/_normalize.scss */
 figcaption,
 figure,
 main {
   /* 1 */
-  display: block;
-}
+  display: block; }
 
 /**
  * Add the correct margin in IE 8.
  */
-/* line 70, ../sass/partials/_normalize.scss */
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 79, ../sass/partials/_normalize.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 90, ../sass/partials/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Text-level semantics
    ========================================================================== */
@@ -103,143 +87,113 @@ pre {
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-/* line 103, ../sass/partials/_normalize.scss */
 a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 113, ../sass/partials/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-/* line 123, ../sass/partials/_normalize.scss */
 b,
 strong {
-  font-weight: inherit;
-}
+  font-weight: inherit; }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 132, ../sass/partials/_normalize.scss */
 b,
 strong {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 142, ../sass/partials/_normalize.scss */
 code,
 kbd,
 samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Add the correct font style in Android 4.3-.
  */
-/* line 153, ../sass/partials/_normalize.scss */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Add the correct background and color in IE 9-.
  */
-/* line 161, ../sass/partials/_normalize.scss */
 mark {
   background-color: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Add the correct font size in all browsers.
  */
-/* line 170, ../sass/partials/_normalize.scss */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 179, ../sass/partials/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 187, ../sass/partials/_normalize.scss */
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
-/* line 191, ../sass/partials/_normalize.scss */
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 /* Embedded content
    ========================================================================== */
 /**
  * Add the correct display in IE 9-.
  */
-/* line 202, ../sass/partials/_normalize.scss */
 audio,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Add the correct display in iOS 4-7.
  */
-/* line 211, ../sass/partials/_normalize.scss */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Remove the border on images inside links in IE 10-.
  */
-/* line 220, ../sass/partials/_normalize.scss */
 img {
-  border-style: none;
-}
+  border-style: none; }
 
 /**
  * Hide the overflow in IE.
  */
-/* line 228, ../sass/partials/_normalize.scss */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Forms
    ========================================================================== */
@@ -247,7 +201,6 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 240, ../sass/partials/_normalize.scss */
 button,
 input,
 optgroup,
@@ -260,75 +213,62 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 256, ../sass/partials/_normalize.scss */
 button,
 input {
   /* 1 */
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 266, ../sass/partials/_normalize.scss */
 button,
 select {
   /* 1 */
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 277, ../sass/partials/_normalize.scss */
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 288, ../sass/partials/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 300, ../sass/partials/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+  outline: 1px dotted ButtonText; }
 
 /**
  * Correct the padding in Firefox.
  */
-/* line 311, ../sass/partials/_normalize.scss */
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -336,7 +276,6 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 322, ../sass/partials/_normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -349,83 +288,68 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */
-}
+  /* 1 */ }
 
 /**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 336, ../sass/partials/_normalize.scss */
 progress {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 345, ../sass/partials/_normalize.scss */
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 354, ../sass/partials/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 364, ../sass/partials/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 374, ../sass/partials/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
-/* line 383, ../sass/partials/_normalize.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 393, ../sass/partials/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Interactive
    ========================================================================== */
@@ -433,466 +357,296 @@ textarea {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
-/* line 406, ../sass/partials/_normalize.scss */
 details,
 menu {
-  display: block;
-}
+  display: block; }
 
 /*
  * Add the correct display in all browsers.
  */
-/* line 415, ../sass/partials/_normalize.scss */
 summary {
-  display: list-item;
-}
+  display: list-item; }
 
 /* Scripting
    ========================================================================== */
 /**
  * Add the correct display in IE 9-.
  */
-/* line 426, ../sass/partials/_normalize.scss */
 canvas {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Add the correct display in IE.
  */
-/* line 434, ../sass/partials/_normalize.scss */
 template {
-  display: none;
-}
+  display: none; }
 
 /* Hidden
    ========================================================================== */
 /**
  * Add the correct display in IE 10-.
  */
-/* line 445, ../sass/partials/_normalize.scss */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
-/* line 1, ../sass/partials/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  /* line 5, ../sass/partials/_media-queries.scss */
   .section-with-image {
-    background-attachment: initial !important;
-  }
-}
+    background-attachment: initial !important; } }
 @supports not (-webkit-overflow-scrolling: touch) {
   /* CSS for other than iOS devices */
-  /* line 13, ../sass/partials/_media-queries.scss */
   .section-with-image {
-    background-attachment: fixed !important;
-  }
-}
-/* line 9, ../sass/styles.scss */
+    background-attachment: fixed !important; } }
 body {
-  font-size: 12px;
-}
+  font-size: 12px; }
 
-/* line 14, ../sass/styles.scss */
 header p {
   font: 1.5em Source Sans Pro, sans-serif;
   padding-left: 1em;
   letter-spacing: 0.5em;
   font-weight: 100;
   text-transform: uppercase;
-  color: gray;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 14, ../sass/styles.scss */
-  header p {
-    font-size: 1.3em;
-    letter-spacing: 0.4em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 14, ../sass/styles.scss */
-  header p {
-    font-size: 1.6em;
-    letter-spacing: 0.4em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 14, ../sass/styles.scss */
-  header p {
-    font-size: 1.5em;
-  }
-}
+  color: gray; }
+  @media only screen and (max-width: 519px) and (orientation: portrait) {
+    header p {
+      font-size: 1.3em;
+      letter-spacing: 0.4em; } }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+    header p {
+      font-size: 1.6em;
+      letter-spacing: 0.4em; } }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
+    header p {
+      font-size: 1.5em; } }
 
-/* line 39, ../sass/styles.scss */
 .section-with-image {
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 39, ../sass/styles.scss */
-  .section-with-image {
-    background-attachment: initial !important;
-  }
-}
-/* line 44, ../sass/styles.scss */
-.section-with-image .greeting-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 52, ../sass/styles.scss */
-.section-with-image #greeting, .section-with-image .type-cursor {
-  font: 5.5em Numans, sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 3em;
-  text-align: center;
-  font-size: 6.6em;
-  padding-top: 5.5em;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 52, ../sass/styles.scss */
+  background-position: center center; }
+  @media only screen and (max-width: 519px) and (orientation: portrait) {
+    .section-with-image {
+      background-attachment: initial !important; } }
+  .section-with-image .greeting-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .section-with-image #greeting, .section-with-image .type-cursor {
-    font-size: 4em;
-    padding-top: 9em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 52, ../sass/styles.scss */
-  .section-with-image #greeting, .section-with-image .type-cursor {
-    padding-top: 5.5em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 52, ../sass/styles.scss */
-  .section-with-image #greeting, .section-with-image .type-cursor {
-    font-size: 3.5em;
-    padding-top: 5em;
-  }
-}
-/* line 72, ../sass/styles.scss */
-.section-with-image #greeting {
-  font-weight: bold;
-}
-/* line 76, ../sass/styles.scss */
-.section-with-image .type-cursor {
-  font-weight: 100;
-}
-/* line 81, ../sass/styles.scss */
-.section-with-image .type-cursor {
-  animation: blinker 0.5s linear infinite;
-  color: bisque;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 81, ../sass/styles.scss */
+    font: 5.5em Numans, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 3em;
+    text-align: center;
+    font-size: 6.6em;
+    padding-top: 5.5em; }
+    @media only screen and (max-width: 519px) and (orientation: portrait) {
+      .section-with-image #greeting, .section-with-image .type-cursor {
+        font-size: 4em;
+        padding-top: 9em; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+      .section-with-image #greeting, .section-with-image .type-cursor {
+        padding-top: 5.5em; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
+      .section-with-image #greeting, .section-with-image .type-cursor {
+        font-size: 3.5em;
+        padding-top: 5em; } }
+  .section-with-image #greeting {
+    font-weight: bold; }
   .section-with-image .type-cursor {
-    display: none;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 81, ../sass/styles.scss */
+    font-weight: 100; }
   .section-with-image .type-cursor {
-    display: none;
-  }
-}
+    animation: blinker 0.5s linear infinite;
+    color: bisque; }
+    @media only screen and (max-width: 519px) and (orientation: portrait) {
+      .section-with-image .type-cursor {
+        display: none; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+      .section-with-image .type-cursor {
+        display: none; } }
 
 @keyframes blinker {
   50% {
-    opacity: 0;
-  }
-}
-/* line 101, ../sass/styles.scss */
+    opacity: 0; } }
 .sect1 {
-  background-image: url("../images/image-himashi-sized.jpg");
-}
+  background-image: url("../images/image-himashi-sized.jpg"); }
 
-/* line 105, ../sass/styles.scss */
 .sub-section {
   background-color: #fff;
-  padding: 8em;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 105, ../sass/styles.scss */
-  .sub-section {
-    padding: 4em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 105, ../sass/styles.scss */
-  .sub-section {
-    padding: 6em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 105, ../sass/styles.scss */
-  .sub-section {
-    padding: 4em;
-  }
-}
-/* line 120, ../sass/styles.scss */
-.sub-section h3 {
-  font: 2.5em Montserrat, sans-serif;
-  text-align: center;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 120, ../sass/styles.scss */
+  padding: 8em; }
+  @media only screen and (max-width: 519px) and (orientation: portrait) {
+    .sub-section {
+      padding: 4em; } }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+    .sub-section {
+      padding: 6em; } }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
+    .sub-section {
+      padding: 4em; } }
   .sub-section h3 {
-    font-size: 1.4em;
-    font-weight: bold;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 120, ../sass/styles.scss */
-  .sub-section h3 {
-    font-size: 1.9em;
-    font-weight: bold;
-  }
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 133, ../sass/styles.scss */
-  .sub-section h3 br {
-    dsplay: none;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 133, ../sass/styles.scss */
-  .sub-section h3 br {
-    display: none;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 133, ../sass/styles.scss */
-  .sub-section h3 br {
-    display: none;
-  }
-}
-/* line 149, ../sass/styles.scss */
-.sub-section p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  font-size: 1.3em;
-  padding-top: 1em;
-  padding-left: 15em;
-  padding-right: 15em;
-  line-height: 1.7em;
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 149, ../sass/styles.scss */
+    font: 2.5em Montserrat, sans-serif;
+    text-align: center; }
+    @media only screen and (max-width: 519px) and (orientation: portrait) {
+      .sub-section h3 {
+        font-size: 1.4em;
+        font-weight: bold; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+      .sub-section h3 {
+        font-size: 1.9em;
+        font-weight: bold; } }
+    @media only screen and (max-width: 519px) and (orientation: portrait) {
+      .sub-section h3 br {
+        dsplay: none; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+      .sub-section h3 br {
+        display: none; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
+      .sub-section h3 br {
+        display: none; } }
   .sub-section p {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 149, ../sass/styles.scss */
-  .sub-section p {
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-  }
-}
-/* line 162, ../sass/styles.scss */
-.sub-section p a {
-  font-weight: bolder;
-  font-style: oblique;
-  font-size: 1.2em;
-}
-/* line 169, ../sass/styles.scss */
-.sub-section .links {
-  list-style-type: none;
-  text-align: center;
-  padding-top: 5em;
-  padding-left: 0;
-}
-/* line 175, ../sass/styles.scss */
-.sub-section .links li {
-  display: inline;
-}
-/* line 180, ../sass/styles.scss */
-.sub-section .logos {
-  width: 5em;
-  padding-right: 1.5em;
-}
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    padding-top: 1em;
+    padding-left: 15em;
+    padding-right: 15em;
+    line-height: 1.7em; }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+      .sub-section p {
+        padding-left: 3em;
+        padding-right: 3em; } }
+    @media only screen and (max-width: 519px) and (orientation: portrait) {
+      .sub-section p {
+        padding-left: 0.3em;
+        padding-right: 0.3em; } }
+    .sub-section p a {
+      font-weight: bolder;
+      font-style: oblique;
+      font-size: 1.2em; }
+  .sub-section .links {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 5em;
+    padding-left: 0; }
+    .sub-section .links li {
+      display: inline; }
+  .sub-section .logos {
+    width: 5em;
+    padding-right: 1.5em; }
 
-/* line 186, ../sass/styles.scss */
 .computer-image {
-  background-image: url("../images/passion.jpg");
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 186, ../sass/styles.scss */
-  .computer-image {
-    background-image: url("../images/passion-phone.jpg");
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 186, ../sass/styles.scss */
-  .computer-image {
-    background-image: url("../images/passion-ipad.jpg");
-  }
-}
+  background-image: url("../images/passion.jpg"); }
+  @media only screen and (max-width: 519px) and (orientation: portrait) {
+    .computer-image {
+      background-image: url("../images/passion-phone.jpg"); } }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+    .computer-image {
+      background-image: url("../images/passion-ipad.jpg"); } }
 
-/* line 198, ../sass/styles.scss */
 .projects-section {
   height: 85em;
   background-color: #fff;
-  padding: 8em;
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 198, ../sass/styles.scss */
-  .projects-section {
-    height: 200em;
-  }
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 198, ../sass/styles.scss */
-  .projects-section {
-    height: 200em;
-  }
-}
-/* line 211, ../sass/styles.scss */
-.projects-section h3 {
-  font: 2.5em Montserrat, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-}
-/* line 216, ../sass/styles.scss */
-.projects-section ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 6em;
-  justify-content: center;
-}
-/* line 223, ../sass/styles.scss */
-.projects-section ul li {
-  padding-right: 5em;
-  padding-bottom: 5em;
-}
-/* line 229, ../sass/styles.scss */
-.projects-section a {
-  text-decoration: none;
-}
-/* line 233, ../sass/styles.scss */
-.projects-section .project-tile {
-  width: 21em;
-  height: 25em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid;
-  border-color: #e5eaee;
-}
-/* line 243, ../sass/styles.scss */
-.projects-section .project-tile p {
-  text-align: center;
-  font-size: 1.2em;
-  color: darkslategray;
-}
-/* line 249, ../sass/styles.scss */
-.projects-section .project-tile p:hover {
-  color: forestgreen;
-}
+  padding: 8em; }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+    .projects-section {
+      height: 200em; } }
+  @media only screen and (max-width: 519px) and (orientation: portrait) {
+    .projects-section {
+      height: 200em; } }
+  .projects-section h3 {
+    font: 2.5em Montserrat, sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+  .projects-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 6em;
+    justify-content: center; }
+    .projects-section ul li {
+      padding-right: 5em;
+      padding-bottom: 5em; }
+  .projects-section a {
+    text-decoration: none; }
+  .projects-section .project-tile {
+    width: 21em;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid;
+    border-color: #e5eaee; }
+    .projects-section .project-tile p {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: 1.2em;
+      color: darkslategray; }
+    .projects-section .project-tile p:hover {
+      color: forestgreen; }
 
-/* line 255, ../sass/styles.scss */
 .sect2 {
-  background-image: url("../images/image-workdesk.jpg");
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 255, ../sass/styles.scss */
-  .sect2 {
-    background-image: url("../images/image-workdesk-phone.jpg");
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 255, ../sass/styles.scss */
-  .sect2 {
-    background-image: url("../images/image-workdesk-ipad.jpg");
-  }
-}
-/* line 266, ../sass/styles.scss */
-.sect2 h1 {
-  font: 5.5em Numans, sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 3em;
-  text-align: center;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 266, ../sass/styles.scss */
+  background-image: url("../images/image-workdesk.jpg"); }
+  @media only screen and (max-width: 519px) and (orientation: portrait) {
+    .sect2 {
+      background-image: url("../images/image-workdesk-phone.jpg"); } }
+  @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+    .sect2 {
+      background-image: url("../images/image-workdesk-ipad.jpg"); } }
   .sect2 h1 {
-    font-size: 2.4em;
-    padding-top: 5.5em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
-  /* line 266, ../sass/styles.scss */
-  .sect2 h1 {
-    font-size: 3.6em;
-    padding-top: 5em;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
-  /* line 266, ../sass/styles.scss */
-  .sect2 h1 {
-    font-size: 3em;
-    padding-top: 2em;
-  }
-}
-/* line 285, ../sass/styles.scss */
-.sect2 #email-address {
-  margin: 1.5em 0 0 0;
-  text-align: center;
-}
-/* line 289, ../sass/styles.scss */
-.sect2 #email-address a {
-  color: #fff;
-  font-size: 2em;
-  text-align: center;
-}
-@media only screen and (max-width: 519px) and (orientation: portrait) {
-  /* line 289, ../sass/styles.scss */
-  .sect2 #email-address a {
-    font-size: 1.7em;
-  }
-}
-/* line 298, ../sass/styles.scss */
-.sect2 #email-address a a:hover, .sect2 #email-address a a:active {
-  color: #822034;
-}
+    font: 5.5em Numans, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 3em;
+    text-align: center; }
+    @media only screen and (max-width: 519px) and (orientation: portrait) {
+      .sect2 h1 {
+        font-size: 2.4em;
+        padding-top: 5.5em; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: portrait) {
+      .sect2 h1 {
+        font-size: 3.6em;
+        padding-top: 5em; } }
+    @media only screen and (max-width: 768px) and (min-width: 520px) and (orientation: landscape) {
+      .sect2 h1 {
+        font-size: 3em;
+        padding-top: 2em; } }
+  .sect2 #email-address {
+    margin: 1.5em 0 0 0;
+    text-align: center; }
+    .sect2 #email-address a {
+      color: #fff;
+      font-size: 2em;
+      text-align: center; }
+      @media only screen and (max-width: 519px) and (orientation: portrait) {
+        .sect2 #email-address a {
+          font-size: 1.7em; } }
+      .sect2 #email-address a a:hover, .sect2 #email-address a a:active {
+        color: #822034; }
 
-/* line 305, ../sass/styles.scss */
 .back-to-top {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 45%;
-}
-/* line 310, ../sass/styles.scss */
-.back-to-top .scroll-to-top {
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  font-size: 1.2em;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: underline;
-  cursor: pointer;
-}
-/* line 318, ../sass/styles.scss */
-.back-to-top .scroll-to-top .scroll-to-top:hover {
-  color: #822034;
-}
+  top: 45%; }
+  .back-to-top .scroll-to-top {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer; }
+    .back-to-top .scroll-to-top .scroll-to-top:hover {
+      color: #822034; }
+
+/*# sourceMappingURL=styles.css.map */
